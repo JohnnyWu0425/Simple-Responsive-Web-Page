@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    margin: 0px;
+    padding: 30px;
+}
+
+.header-area{
+    width: auto;
+    height: 25vh;
+    position: relative;
+
+    /*background-color: aqua;*/
+
+    text-align: center;
+    line-height: 25vh;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.section-area-row{
+    width: auto;
+    height: 40vh;
+    position: relative;
+    /*background-color: cadetblue;*/
+}
+
+.section-area-col{
+    position: relative;
+    background-color:blueviolet;
+    height: 98%;
+    float: left;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+@media screen and (min-width: 992px){
+    .section-area-col{
+        width: 32.69%;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px){
+    .section-area-col{
+        width: 49.10%;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .section-area-col{
+        width: 99%;
+    }
+}
+
+.section-title-box{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+
+    height: 15%;
+    width: 40%;
+
+    background-color: cornsilk;
+
+    border-left-color: black;
+    border-left-width: 2px;
+    border-left-style: solid;
+
+    border-bottom-color: black;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+
+    text-align: center;
+    line-height: 15%;
+}
+
+.section-title{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.section-content-box{
+    /*background-color: lawngreen;*/
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    padding: 10px;
+    overflow: scroll;
+}
